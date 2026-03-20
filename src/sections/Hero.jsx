@@ -1,9 +1,8 @@
 import Button from '@/components/Button'
 import AnimatedBorderButton from '@/components/AnimatedBorderButton'
-import { LuArrowRight, LuDownload, LuMail } from 'react-icons/lu'
+import { LuArrowRight, LuDownload, LuGithub } from 'react-icons/lu'
 import { RxDiscordLogo } from 'react-icons/rx'
 import { PiTelegramLogo } from 'react-icons/pi'
-import { FiGithub } from 'react-icons/fi'
 import { IoIosArrowDown } from 'react-icons/io'
 
 const getRandomPosition = () => `${Math.random() * 100}%`
@@ -32,6 +31,7 @@ const skills = [
   'Nginx',
   'Ansible',
   'Unix',
+  'CI/CD',
 ]
 
 export default function Hero() {
@@ -110,7 +110,7 @@ export default function Hero() {
             {/* Social Links */}
             <div className='flex items-center gap-4 animate-fade-in animation-delay-400'>
               {[
-                { icon: FiGithub, href: 'https://github.com/debibl' },
+                { icon: LuGithub, href: 'https://github.com/debibl' },
                 { icon: PiTelegramLogo, href: 'https://t.me/hipoori' },
                 {
                   icon: RxDiscordLogo,

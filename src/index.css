@@ -1,5 +1,17 @@
 @import 'tailwindcss';
 
+::selection {
+  background: #20b2a6;
+  color: black;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #20b2a6;
+  color: black;
+  text-shadow: none;
+}
+
 @theme {
   --color-background: #0f1418;
   --color-foreground: #f0f2f5;
@@ -26,6 +38,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scrollbar-color: #20b2a6 #1f2830;
+    scrollbar-width: thin;
   }
 
   body {
