@@ -89,8 +89,8 @@ export default function Hero() {
                 </span>
               </h1>
               <p className='text-md md:text-lg text-muted-foreground w-xs md:w-lg animate-fade-in animation-delay-200 text-balance'>
-                Привет, я Василина Мирян - frontend-разработчица,
-                специализирующаяся на React, JavaScript и Node.js. Я создаю
+                Привет, я Василина Мирян - frontend-разработчик,
+                специализирующийся на React, JavaScript и Node.js. Я создаю
                 адаптивные, кроссбраузерные веб-приложения, которые нравятся
                 пользователям.
               </p>
