@@ -5,12 +5,13 @@ const projects = [
   {
     title: '"Femme FatalERROR" Games',
     description:
-      'Первая коллективная работа, выполненная в рамках учебной практики. Представляет собой сборник браузерных игр, объединенных темой "программирование". Над созданием работало 6 человек. Я была тимлидом команды: координировала участников, вела отчетность, настроила деплой и Github Actions, создала макет и верстку главной страницы, а также игру "Виселица".',
+      'Командный проект, реализованный в рамках учебной практики: сборник браузерных игр, объединённых темой программирования. В команде из 6 человек выступала в роли тимлида — координировала работу участников и организовывала процессы. Отвечала за разработку ключевых частей проекта: создала макет и верстку главной страницы, реализовала игру «Виселица», а также настроила деплой и CI/CD (GitHub Actions).',
     image: '/projects/PracticeGames-Mockup.jpg',
     tags: [
       'HTML5',
       'CSS3',
       'JavaScript',
+      'UI/UX',
       'Figma',
       'CI/CD',
       'Github Actions',
@@ -22,7 +23,7 @@ const projects = [
   {
     title: 'QRCodeGen',
     description:
-      'Последняя коллективная работа, выполненная в рамках учебной практики. Представляет собой целую экосистему продуктов: рекламный лендинг, браузерное расширение и Телеграм бота. Тема: расширение для генерации и кастомизации QR-кодов. Я снова была тимлидом команды: координировала участников, создала макеты для всех продуктов и полностью разработала расширение для браузера.',
+      'Финальный командный проект в рамках учебной практики: разработка набора продуктов для генерации и кастомизации QR-кодов (лендинг, браузерное расширение и Telegram-бот). В команде выполняла роль тимлида: координировала участников и организовывала работу. Отвечала за дизайн всех продуктов (Figma) и полностью разработала браузерное расширение (логика, UI/UX, интеграция с API).',
     image: '/projects/QRCodeGen-Mockup.jpg',
     tags: [
       'React',
@@ -33,6 +34,7 @@ const projects = [
       'Vite',
       'CSS3',
       'HTML5',
+      'UI/UX',
       'Figma',
       'Jira',
       'REST API',
@@ -45,9 +47,17 @@ const projects = [
   {
     title: 'Book Tracker',
     description:
-      'Пет-проект, созданный для решения личной проблемы. Представляет собой трекер книг с функционалом сортировки, редактирования и рандомизации. На данный момент проект приватный, в будущем планирую масштабирование и открытый доступ после получения хостинга.',
+      'Пет-проект для управления списком книг: позволяет отслеживать, редактировать и структурировать личную библиотеку, включая фильтрацию по статусу (прочитано / в процессе / планируется) и случайный выбор книг. При разработке уделила внимание UX, структуре данных и удобству взаимодействия с интерфейсом. Планируется дальнейшее развитие и публикация проекта.',
     image: '/projects/BookTracker-Mockup.jpg',
-    tags: ['React', 'JavaScript', 'Tailwind', 'Vite', 'REST API', 'CI/CD'],
+    tags: [
+      'React',
+      'JavaScript',
+      'Tailwind',
+      'Vite',
+      'UI/UX',
+      'REST API',
+      'CI/CD',
+    ],
     link: '',
     github: '',
   },
@@ -74,8 +84,8 @@ export default function Projects() {
               </span>
             </h2>
             <p className='text-muted-foreground animate-fade-in animation-delay-200'>
-              Небольшая подборка моих работ, от первого опыта до крупных
-              коллективных проектов, которые решают реальные задачи.
+              Небольшая подборка моих проектов - от учебных задач до командных
+              решений с практическим смыслом.
             </p>
           </div>
         </div>
@@ -99,23 +109,25 @@ export default function Projects() {
 
                 {/* Overlay Links */}
                 {project.link && project.github && (
-                  <div className='absolute inset-0 flex-center gap-4 opacity-0 hover:opacity-100 transition-opacity duration-300'>
-                    <a
-                      href={project.link}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className='p-3 rounded-full glass hover:bg-primary hover:text-white transition-all'
-                    >
-                      <LuArrowUpRight size={25} />
-                    </a>
-                    <a
-                      href={project.github}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className='p-3 rounded-full glass hover:bg-primary hover:text-white transition-all'
-                    >
-                      <LuGithub size={25} />
-                    </a>
+                  <div className='hidden lg:block'>
+                    <div className='absolute inset-0 flex-center gap-4 opacity-0 hover:opacity-100 transition-opacity duration-300'>
+                      <a
+                        href={project.link}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='p-3 rounded-full glass hover:bg-primary hover:text-white transition-all'
+                      >
+                        <LuArrowUpRight size={25} />
+                      </a>
+                      <a
+                        href={project.github}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='p-3 rounded-full glass hover:bg-primary hover:text-white transition-all'
+                      >
+                        <LuGithub size={25} />
+                      </a>
+                    </div>
                   </div>
                 )}
               </div>
@@ -154,10 +166,17 @@ export default function Projects() {
 
         {/* View All Projects CTA */}
         <div className='text-center mt-12 animate-fade-in animation-delay-500'>
-          <AnimatedBorderButton>
-            Все проекты
-            <LuArrowUpRight size={20} />
-          </AnimatedBorderButton>
+          <a
+            href='https://github.com/debibl'
+            alt='github page'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <AnimatedBorderButton>
+              Все проекты
+              <LuArrowUpRight size={20} />
+            </AnimatedBorderButton>
+          </a>
         </div>
       </div>
     </section>
