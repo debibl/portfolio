@@ -48,6 +48,10 @@
     font-family: 'Inter', sans-serif;
   }
 
+  button {
+    cursor: pointer;
+  }
+
   .text-serif {
     font-family: 'Playfair Display', serif;
   }
