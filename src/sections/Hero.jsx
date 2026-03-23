@@ -104,10 +104,17 @@ export default function Hero() {
                 </Button>
               </a>
 
-              <AnimatedBorderButton>
-                <LuDownload size={20} />
-                Скачать резюме
-              </AnimatedBorderButton>
+              <a
+                href='/resume.pdf'
+                target='_blank'
+                rel='noopener noreferrer'
+                download
+              >
+                <AnimatedBorderButton>
+                  <LuDownload size={20} />
+                  Скачать резюме
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* Social Links */}
