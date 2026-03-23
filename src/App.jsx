@@ -6,7 +6,7 @@ import Experience from '@/sections/Experience'
 import Testimonials from '@/sections/Testimonials'
 import Contact from '@/sections/Contact'
 import Footer from '@/layout/Footer'
-import { Analytics } from '@vercel/analytics/next'
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
