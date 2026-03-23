@@ -1,4 +1,5 @@
 # Portfolio Website
+![uwu](https://img.shields.io/badge/uwu-%E2%9D%A4%EF%B8%8F-ffc8e5?labelColor=ff5497&style=flat)
 
 Frontend developer portfolio built with React, Tailwind and Vite. This project showcases my work, skills, and approach to building clean, responsive user interfaces.
 
