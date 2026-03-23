@@ -5,7 +5,7 @@ Frontend developer portfolio built with React, Tailwind and Vite. This project s
 
 ## Live Demo
 
-👉 [View website](https://portfolio-debibl.vercel.app/)
+👉 [View website](https://vm-portfolio.vercel.app/)
 
 ## About the Project
 
