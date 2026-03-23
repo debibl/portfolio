@@ -45,7 +45,7 @@ export default function Testimonials() {
   }
   return (
     <section id='testimonials' className='py-30 relative overflow-hidden'>
-      <div className='absolute top-1/2 left-1/2 w-200 h-200 bg-primary/5 rounded-full  blur-3xl -translate-x-1/2 -translate-y-1/2' />
+      <div className='absolute top-1/2 left-1/2 size-180 bg-primary/5 rounded-full  blur-3xl -translate-x-1/2 -translate-y-1/2' />
       <div className='container mx-auto px-6 relative z-10'>
         {/* Section Header */}
         <div className='mx-w-3xl mx-auto mb-16 text-center'>
@@ -105,6 +105,7 @@ export default function Testimonials() {
               <div className='flex gap-2'>
                 {testimonials.map((_, index) => (
                   <button
+                    key={index}
                     onClick={() => setActiveIndex(index)}
                     className={`w-2 h-2 rounded-full transition-all duration-300 ${
                       index === activeIndex

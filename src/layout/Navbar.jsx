@@ -65,7 +65,9 @@ export default function Navbar() {
 
         {/* CTA Button */}
         <div className='hidden md:block'>
-          <Button size='sm'>Написать мне</Button>
+          <a href='#contact'>
+            <Button size='sm'>Написать мне</Button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}

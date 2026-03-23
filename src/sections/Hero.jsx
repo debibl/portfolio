@@ -98,9 +98,12 @@ export default function Hero() {
 
             {/* Calls To Action */}
             <div className='flex flex-wrap gap-4 animate-fade-in animation-delay-300'>
-              <Button size='lg'>
-                Написать мне <LuArrowRight size={20} />
-              </Button>
+              <a href='#contact'>
+                <Button size='lg'>
+                  Написать мне <LuArrowRight size={20} />
+                </Button>
+              </a>
+
               <AnimatedBorderButton>
                 <LuDownload size={20} />
                 Скачать резюме
@@ -190,7 +193,7 @@ export default function Hero() {
           href='#about'
           className='flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group'
         >
-          <span className='text-xs uppercase tracking-wider'>Дальше</span>
+          <span className='text-xs uppercase tracking-wider'>Крути</span>
           <IoIosArrowDown className='w-6 h-6 animate-bounce' />
         </a>
       </div>

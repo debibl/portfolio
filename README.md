@@ -1,16 +1,39 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend developer portfolio built with React, Tailwind and Vite. This project showcases my work, skills, and approach to building clean, responsive user interfaces.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [View website](#)
 
-## React Compiler
+## About the Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is a personal portfolio website designed to present my projects and technical background in a clear and structured way. The focus is on simplicity, usability, and performance.
 
-## Expanding the ESLint configuration
+The website includes:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Selected projects with descriptions and links
+- Information about my skills and tech stack
+- Contact section for direct communication
+
+## Tech Stack
+
+- React
+- Vite
+- JavaScript (ES6+)
+- Tailwind CSS
+
+## Features
+
+- Responsive layout (mobile-first)
+- Clean and minimal UI
+- Fast load times
+- Reusable component structure
+
+## Contact
+
+If you are interested in working together or have any questions, feel free to reach out:
+
+- Email: [v.miryan@ya.ru](mailto:v.miryan@ya.ru)
+- Telegram: [@hipoori](https://t.me/hipoori)
+- Discord: [@debibl](https://discordapp.com/users/281129817145999361)

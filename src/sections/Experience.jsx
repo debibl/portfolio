@@ -89,7 +89,7 @@ export default function Experience() {
         <div className='relative'>
           <div
             className='timeline-glow absolute left-0 lg:left-1/2 top-0 bottom-0 w-0.5 
-          bg-linear-to-b from-primary/70 via-primary/30 to-transparent
+          bg-linear-to-b from-primary/10 via-primary/30 to-transparent
           lg:-translate-x-1/2 shadow-[0_0_25px_rgba(32,178,166,0.8)]'
           />
 
@@ -102,7 +102,7 @@ export default function Experience() {
                 style={{ animationDelay: `${(index + 1) * 100}ms` }}
               >
                 {/* Timeline Dot */}
-                <div className='absolute lef-0 lg:left-1/2 top-0 w-3 h-3 bg-primary rounded-full -translate-x-1/2 ring-4 ring-background z-10'>
+                <div className='absolute lef-0 lg:left-1/2 top-0 size-3 bg-primary rounded-full -translate-x-1/2 ring-4 ring-background z-10'>
                   {exp.current && (
                     <span className='absolute inset-0 rounded-full bg-primary animate-ping opacity-75' />
                   )}
@@ -126,7 +126,7 @@ export default function Experience() {
                     {exp.company && (
                       <p className='text-muted-foreground'>{exp.company}</p>
                     )}
-                    <p className='text-sm text-muted-foreground mt-4 text-balance'>
+                    <p className='text-sm text-muted-foreground mt-4 text-balance text-left'>
                       {exp.description}
                     </p>
                     <div
