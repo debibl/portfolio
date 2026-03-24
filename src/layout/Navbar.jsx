@@ -94,9 +94,14 @@ export default function Navbar() {
               </a>
             ))}
 
-            <Button className='m-3' onClick={() => setIsMobileMenuOpen(false)}>
-              Написать мне
-            </Button>
+            <a href='#contact'>
+              <Button
+                className='m-3'
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Написать мне
+              </Button>
+            </a>
           </div>
         </div>
       )}

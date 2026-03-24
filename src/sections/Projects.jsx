@@ -139,10 +139,16 @@ export default function Projects() {
                     {project.title}
                   </h3>
                   {project.link && (
-                    <LuArrowUpRight
-                      size={20}
-                      className='text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all'
-                    />
+                    <a
+                      href={project.github}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <LuArrowUpRight
+                        size={20}
+                        className='text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all'
+                      />
+                    </a>
                   )}
                 </div>
                 <p className='text-muted-foreground text-sm'>
